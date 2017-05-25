@@ -2,7 +2,9 @@
 
 Fork of the Suranyami Light UI theme but with:
 
-* tighter line-spacing in the sidebar
-* increased tree view font-size
+* White backgrounds like Kate editor
+* Tighter line-spacing in the sidebar
+* Increased tree view font-size
+* A few UI color modes
 
 ![screen shot of Kate Light UI Theme](https://raw.githubusercontent.com/NTShop/kate-light-ui/master/ui-screen-shot.png)
