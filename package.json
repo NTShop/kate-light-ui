@@ -1,0 +1,15 @@
+{
+  "name": "kate-light-ui",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "Light UI theme with tighter sidebar and syntax highlighting similar to Kate editor",
+  "repository": "https://github.com/suranyami/suranyami-light-ui.git",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "theme"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
