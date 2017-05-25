@@ -60,3 +60,31 @@
 .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
 	margin-left: 0;
 }
+
+
+.list-group li:not(.list-nested-item).selected, .list-tree li:not(.list-nested-item).selected, .list-group li.list-nested-item.selected > .list-item, .list-tree li.list-nested-item.selected > .list-item {
+	color: #111;
+}
+.list-group .selected::before, .list-tree .selected::before {
+	background-color: #b6eaf7 !important;
+	width: 97%;
+}
+
+
+.list-group .icon::before, .list-tree .icon::before {
+    color: #ff9d00;
+    font-size: 1em;
+}
+.icon-file-text::before {
+	color: #5454b9 !important;
+}
+
+
+// style the background color of the tree view
+.tree-view {
+  	background-color: white;
+	font-size: 16px;
+}
+.tree-view .list-tree {
+    background-color: white;
+}

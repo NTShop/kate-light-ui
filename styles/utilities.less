@@ -18,3 +18,45 @@
   .text(highlight);
   background: @background-color-highlight;
 }
+
+
+// TOOLBAR package
+.tab-bar {
+    background-image: -webkit-linear-gradient(top, #333, #333);
+}
+.tool-bar button.tool-bar-btn {
+    background-color: #fff;
+    border-color: #aaa;
+}
+.tab-bar .tab, .tab-bar .tab:before, .tab-bar .tab:after {
+	background: #fff;
+}
+.tool-bar.tool-bar-vertical .tool-bar-spacer {
+	height:18px;
+	border-bottom: 0px;
+	border-top: 0px;
+}
+.tab-bar .tab .close-icon::before {
+    content: "\f081";
+    color: white;
+    background: #bc0000;
+    border-radius: 10px;
+    padding: 2px 3px 2px 2px;
+    font-size: 0.90em;
+}
+// TOOLBAR ICONS
+.ion-archive:before {
+    color: #009623;
+}
+.ion-document-text:before {
+    color: blue;
+}
+.ion-folder:before {
+    color: #ff9d00;
+}
+.icon-bug:before {
+    color: #6a07d0;
+}
+.ion-gear-a:before {
+    color: #bc0000;
+}

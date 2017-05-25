@@ -4,6 +4,76 @@ atom-workspace {
   background-color: @app-background-color;
 }
 
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+	color: #222;
+	background-color: white;
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+atom-text-editor .bracket-matcher .region,
+:host .bracket-matcher .region {
+    border-bottom: none;
+    background: #c9fdff;
+}
+
+// Find and replace
+atom-text-editor {
+  .find-result .region {
+    background-color: yellow;
+	opacity: 0.2;
+    border-radius: @component-border-radius;
+    border: 1px solid red;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+}
+
+// HIGHLIGHT SELECTION TEXT
+atom-text-editor::shadow .selection .region {
+  	background-color: #b0e4fc;
+}
+
+// HIGHLIGHT SELECTED TEXT ACROSS ALL INSTANCES OF THE SELECTED TEXT
+atom-text-editor .highlights {
+	  .highlight.highlight-selected .region {
+		    position: absolute;
+		    pointer-events: none;
+		    z-index: -1;
+	  }
+
+	  .highlight-selected .region {
+		    border-radius: 00px;
+		    box-sizing: border-box;
+		    background-color: #ffff8c;
+		    border-width: 0px;
+		    border-style: solid;
+	  }
+
+	  // Box
+	  .highlight-selected .region {
+	    	//border-color: #ddd;
+	  }
+	  // Background
+	  .highlight-selected.background .region {
+	    	background-color: #ffff8c;
+	  }
+	  // Light theme box (set in settings)
+	  .highlight-selected.light-theme .region {
+	    	//border-color: rgba(255, 128, 64, 0.4);
+	  }
+	  // Light theme background (set in settings)
+	  .highlight-selected.light-theme.background .region {
+	    	//background-color: rgba(255, 128, 64, 0.2);
+	  }
+}
+
 .scrollbars-visible-always {
   /deep/ ::-webkit-scrollbar {
     width: 10px;
@@ -20,4 +90,38 @@ atom-workspace {
     border-radius: 5px;
 		box-shadow: 0 0 1px white inset;
   }
+}
+
+status-bar {
+	  .highlight-selected-status {
+	    	display: inline-block;
+	  }
+	  .highlight-selected-hidden {
+	    	display: none;
+	  }
+}
+
+// SCROLL BARS
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+
+    &-track {
+      border: 0px;
+      border-radius: 0px;
+      background-color: #eee !important;
+    }
+
+    &-thumb {
+      background-color: #0099ee !important;
+      border: 0px;
+      border-radius: 0px;
+      min-height: 30px;
+    }
+  }
+}
+
+.bracket-matcher-highlight .region {
+	background: #00cc00 !important;
 }
